@@ -35,9 +35,14 @@
     background-size: cover;
     color: #fff;
 }
-#calculator{
+.option{
     width:200px;
-    padding:20px;
+    padding:10px;
+    border:0;
+}
+.productOption{
+    width:200px;
+    padding:10px;
     border:0;
 }
 #quantity{

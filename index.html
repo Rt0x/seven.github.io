@@ -73,36 +73,32 @@
                      </div>
                     </article>
                  </div>
-                <div id="calculator">
-                    <label for="options">Цветы:</label>
-                    <select id="options">
-                      <option value="0">Выберите опцию</option>
-                      <option value="200">Роза (+200 руб.)</option>
-                      <option value="100">Тюльпан (+100 руб.)</option>
-                      <option value="150">Ирис (+150 руб.)</option>
-                      <option value="80">Гвоздика (+80 руб.)</option>
-                      <option value="150">Калла (+150 руб.)</option>
-                      <option value="180">Сирень (+180 руб.)</option>
-                      <option value="70">Пион (+70 руб.)</option>
-                      <option value="120">Лилия (+120 руб.)</option>
+                 <div id="calculator">
+                    <div class="option">
+                    <label for="productOption">Цветы:</label>
+                    <select id="productOption">
+                      <option value="option1">Розы (+150₽)</option>
+                      <option value="option2">Тюльпаны (+100₽)</option>
+                      <option value="option3">Ирисы (+200₽)</option>
+                      <option value="option4">Гвоздики (+50₽)</option>
+                      <option value="option5">Каллы (+170₽)</option>
+                      <option value="option6">Фиалки (+70₽)</option>
+                      <option value="option7">Пионы (+90₽)</option>
+                      <option value="option8">Лилии (+150₽)</option>
                     </select>
-                  </div>
-                  
-                  <div>
-                    <label for="quantity">Количество цветов в букете:</label>
+
+                    <label for="quantity">Количество цветов:</label>
                     <input type="number" id="quantity" min="1" value="1">
-                  </div>
-                  
-                  <div>
-                    <label>Получение:</label>
-                    <input type="radio" name="serviceType" value="type1" checked> Доставка
-                    <input type="radio" name="serviceType" value="type2"> Самовывоз
-                  </div>
-                  
-                  <div>
-                    <label>
-                      <input type="checkbox" id="property"> Фирменная упаковка
-                    </label>
+                </div>
+                   
+                    <input type="radio" name="serviceType" value="basic" checked> Доставка (+100₽)
+                    <input type="radio" name="serviceType" value="standard"> Самовывоз
+                    
+                    <div class="productOption">
+                    <label for="productProperty"></label>
+                    <input type="checkbox" id="productProperty"> Фирменная упаковка (+150₽)
+                    </div>
+                    <h3>Цена: <span id="price">0</span> ₽</h3>
                   </div>
                   
                   <div>

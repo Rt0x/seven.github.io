@@ -77,7 +77,7 @@
 }
 
 article img{ /*размер изображений слайдера*/
-	width: 300%;
+	width: 100%;
 }
 
 #desktop:checked ~ #slider{ /*размер всего слайдера*/

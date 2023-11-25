@@ -87,14 +87,14 @@ article img{ /*размер изображений слайдера*/
 
 /*настройка переключения и положения для левой стрелки*/
 /*если свич1-8 активны, то идет обращение к лейблу из блока с id контролс*/
-#switch1:checked ~ #controls label:nth-child(8), 
+#switch1:checked ~ #controls label:nth-child(5), 
 #switch2:checked ~ #controls label:nth-child(1),
 #switch3:checked ~ #controls label:nth-child(2),
 #switch4:checked ~ #controls label:nth-child(3),
-#switch5:checked ~ #controls label:nth-child(4)
-#switch6:checked ~ #controls label:nth-child(5),
+#switch5:checked ~ #controls label:nth-child(4){
+/* #switch6:checked ~ #controls label:nth-child(5),
 #switch7:checked ~ #controls label:nth-child(6),
-#switch8:checked ~ #controls label:nth-child(7){
+#switch8:checked ~ #controls label:nth-child(7) */
 	background: url('prev.png') no-repeat; /*заливка фона картинкой без повторений*/
 	float: left;
 	margin: 0 0 0 -84px; /*сдвиг влево*/
@@ -108,9 +108,9 @@ article img{ /*размер изображений слайдера*/
 #switch2:checked ~ #controls label:nth-child(3),
 #switch3:checked ~ #controls label:nth-child(4),
 #switch4:checked ~ #controls label:nth-child(5),
-#switch5:checked ~ #controls label:nth-child(6),
+/* #switch5:checked ~ #controls label:nth-child(6),
 #switch6:checked ~ #controls label:nth-child(7),
-#switch7:checked ~ #controls label:nth-child(8),
+#switch7:checked ~ #controls label:nth-child(8), */
 #switch8:checked ~ #controls label:nth-child(1){
 	background: url('next.png') no-repeat; /*заливка фона картинкой без повторений*/
 	float: right;
@@ -149,7 +149,7 @@ label, a{ /*при наведении на стрелки или переклю�
 	margin-left: -400%;
 }
 
-#switch6:checked ~ #slides .image{
+/* #switch6:checked ~ #slides .image{
 	margin-left: -500%;
 }
 
@@ -159,7 +159,7 @@ label, a{ /*при наведении на стрелки или переклю�
 
 #switch8:checked ~ #slides .image{
 	margin-left: -700%;
-}
+} */
 
 #controls{ /*положение блока всех управляющих элементов*/
 	margin: -25% 0 0 0;
@@ -190,10 +190,10 @@ label, a{ /*при наведении на стрелки или переклю�
 #switch2:checked ~ #active label:nth-child(2),
 #switch3:checked ~ #active label:nth-child(3),
 #switch4:checked ~ #active label:nth-child(4),
-#switch5:checked ~ #active label:nth-child(5),
-#switch6:checked ~ #active label:nth-child(6),
+#switch5:checked ~ #active label:nth-child(5){
+/* #switch6:checked ~ #active label:nth-child(6),
 #switch7:checked ~ #active label:nth-child(7),
-#switch8:checked ~ #active label:nth-child(8){
+#switch8:checked ~ #active label:nth-child(8) */
 	background: #18a3dd;
 	border-color: #18a3dd !important;
 }

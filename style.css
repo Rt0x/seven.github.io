@@ -67,7 +67,7 @@
 }
 
 #slides .image{ /*устанавливает общий размер блока с изображениями*/
-	width: 300%;
+	width: 500%;
 	line-height: 0;
 }
 
@@ -81,7 +81,7 @@ article img{ /*размер изображений слайдера*/
 }
 
 #desktop:checked ~ #slider{ /*размер всего слайдера*/
-	max-width: 480px; /*максимальнная длинна*/
+	max-width: 240px; /*максимальнная длинна*/
     
 }
 
@@ -189,3 +189,16 @@ label, a{ /*при наведении на стрелки или переклю�
 #controls label{ /*прозрачность стрелок при отводе курсора*/
 	transition: opacity 0.2s ease-out;
 }
+#feedbackForm {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('background.jpg');
+    padding: 20px;
+    z-index: 9999;
+    border-radius: 5px;
+  }
+  .hidden {
+    display: none;
+  }

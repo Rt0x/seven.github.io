@@ -1,55 +1,5 @@
-#main-nav{
-    background-color: rgb(0, 0, 0);
-    height: 108px;
-    text-align: right;
-}
-.logo-holder{
-    float: left;
-    padding-left: 0px;
-    text-align: left;
-    color: #fff;
-}
-.logo-img{
-    width: 19%;
-    border-radius: 5rem;
-}
-#main-menu{
-    list-style: none;
-}
-.main-menu-item{
-    display: inline-block;
-}
-
-.main-menu-item a{
-    color: white;
-    text-decoration: none;
-    background-color: rgb(74, 10, 90);
-    padding: 20px;
-    margin: 5px, -100px, -100px, -100px;
-    border-radius: 5px; 
-}
-.main-menu-item a:hover {background-color: #de00c0;}
 .content{
-    background-image: url('background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff;
-}
-.option{
-    width:200px;
-    padding:10px;
-    border:0;
-}
-.productOption{
-    width:200px;
-    padding:10px;
-    border:0;
-}
-#quantity{
-    border-radius: 10px;
-}
-#options{
-    border-radius: 10px;
+	background-color: #76c8ff ;
 }
 #slider { /*положение слайдера*/
     position: relative;
@@ -61,7 +11,7 @@
 	margin: 0 auto;
 }
 
-#slides article{ /*все изображения справа друг от друга*/
+#slides article{ /*все изображения справа друг от доруга*/
 	width: 20%;
 	float: left;
 }
@@ -71,30 +21,26 @@
 	line-height: 0;
 }
 
-#overflow{ /*скрывает все, что находится за пределами этого блока*/
+#overflow{ /*сркывает все, что находится за пределами этого блока*/
 	width: 100%;
 	overflow: hidden;
 }
 
 article img{ /*размер изображений слайдера*/
-	width: 70%;
+	width: 100%;
 }
 
 #desktop:checked ~ #slider{ /*размер всего слайдера*/
-	max-width: 240px; /*максимальнная длинна*/
-    
+	max-width: 960px; /*максимальнная длинна*/
 }
 
 /*настройка переключения и положения для левой стрелки*/
-/*если свич1-8 активны, то идет обращение к лейблу из блока с id контролс*/
+/*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
 #switch1:checked ~ #controls label:nth-child(5), 
 #switch2:checked ~ #controls label:nth-child(1),
 #switch3:checked ~ #controls label:nth-child(2),
 #switch4:checked ~ #controls label:nth-child(3),
 #switch5:checked ~ #controls label:nth-child(4){
-/* #switch6:checked ~ #controls label:nth-child(5),
-#switch7:checked ~ #controls label:nth-child(6),
-#switch8:checked ~ #controls label:nth-child(7) */
 	background: url('prev.png') no-repeat; /*заливка фона картинкой без повторений*/
 	float: left;
 	margin: 0 0 0 -84px; /*сдвиг влево*/
@@ -108,10 +54,7 @@ article img{ /*размер изображений слайдера*/
 #switch2:checked ~ #controls label:nth-child(3),
 #switch3:checked ~ #controls label:nth-child(4),
 #switch4:checked ~ #controls label:nth-child(5),
-/* #switch5:checked ~ #controls label:nth-child(6),
-#switch6:checked ~ #controls label:nth-child(7),
-#switch7:checked ~ #controls label:nth-child(8), */
-#switch8:checked ~ #controls label:nth-child(1){
+#switch5:checked ~ #controls label:nth-child(1){
 	background: url('next.png') no-repeat; /*заливка фона картинкой без повторений*/
 	float: right;
 	margin: 0 -84px 0 0; /*сдвиг вправо*/
@@ -149,18 +92,6 @@ label, a{ /*при наведении на стрелки или переклю�
 	margin-left: -400%;
 }
 
-/* #switch6:checked ~ #slides .image{
-	margin-left: -500%;
-}
-
-#switch7:checked ~ #slides .image{
-	margin-left: -600%;
-}
-
-#switch8:checked ~ #slides .image{
-	margin-left: -700%;
-} */
-
 #controls{ /*положение блока всех управляющих элементов*/
 	margin: -25% 0 0 0;
 	width: 100%;
@@ -191,9 +122,6 @@ label, a{ /*при наведении на стрелки или переклю�
 #switch3:checked ~ #active label:nth-child(3),
 #switch4:checked ~ #active label:nth-child(4),
 #switch5:checked ~ #active label:nth-child(5){
-/* #switch6:checked ~ #active label:nth-child(6),
-#switch7:checked ~ #active label:nth-child(7),
-#switch8:checked ~ #active label:nth-child(8) */
 	background: #18a3dd;
 	border-color: #18a3dd !important;
 }

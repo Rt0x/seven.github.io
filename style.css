@@ -128,19 +128,19 @@ label, a{ /*при наведении на стрелки или переклю�
 }
 
 #switch2:checked ~ #slides .image{
-	margin-left: -100%;
+	margin-left: -500%;
 }
 
 #switch3:checked ~ #slides .image{
-	margin-left: -200%;
+	margin-left: -100%;
 }
 
 #switch4:checked ~ #slides .image{
-	margin-left: -300%;
+	margin-left: -150%;
 }
 
 #switch5:checked ~ #slides .image{
-	margin-left: -400%;
+	margin-left: -200%;
 }
 
 
